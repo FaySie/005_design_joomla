@@ -1,0 +1,9 @@
+{
+    "require": {
+        "asika/dom-parser": "1.0.*@stable",
+        "asika/sitemap": "1.*"
+    },
+    "config" : {
+        "vendor-dir" : "lib"
+    }
+}

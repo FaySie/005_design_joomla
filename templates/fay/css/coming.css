@@ -1,0 +1,109 @@
+/**************************************************
+*
+*    web color
+*
+*    white        : #fff
+*    gray(light)  : #8b8b8b
+*    blue(light)  : #b1d1f6
+*	 blue(dark)	  : #0a0e22
+*    black        : #000
+*
+**************************************************/
+
+/*
+GENERAL
+*/
+
+body {
+    background: url(../img/bg_other.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #000;
+    overflow: visible;
+    height: initial;
+	font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+}
+
+a,
+span {
+	font-size: 16px;
+}
+
+h1,
+h4,
+h5,
+p,
+span {
+    color: #fff;
+}
+
+/*-----------------------------------------------
+*    content
+-----------------------------------------------*/
+
+#main {
+    height: 100%;
+    padding: 0;
+}
+
+.row {
+    margin-top: 7vh;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    margin-top: 15vh;
+    margin-bottom: 8vh;
+}
+
+.title h5 {
+    color: #8b8b8b;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/*-----------------------------------------------
+*    footer
+-----------------------------------------------*/
+footer {
+    background-color: #0a0e22;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 8vh;
+}
+
+#footer {
+    height: 20vh;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.contact img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.contact h6 {
+    color: #8b8b8b;
+}
+

@@ -1,0 +1,150 @@
+/**************************************************
+*
+*    web color
+*
+*    white        : #fff
+*    gray(light)  : #8b8b8b
+*    blue(light)  : #b1d1f6
+*	 blue(dark)	  : #0a0e22
+*    black        : #000
+*
+**************************************************/
+
+/*
+GENERAL
+*/
+
+.page li.active {
+	list-style-type: circle;
+}
+
+body {
+    /*background: url(../img/bg1.jpg) center center no-repeat;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
+	background-color: #000;
+    overflow: visible;
+    height: initial;
+	font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+}
+
+a,
+span {
+	font-size: 16px;
+}
+
+/*-----------------------------------------------
+*    fullpage slideshow
+-----------------------------------------------*/
+
+.cb-slideshow li{
+	list-style-type: none;
+}
+
+/*-----------------------------------------------
+*    content
+-----------------------------------------------*/
+
+#main {
+	height: 100%;
+	padding: 0;
+}
+
+.content img {
+	margin: 0 auto;
+	height: 100%;
+}
+
+.section {
+	height: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.section div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.section5 div {
+	width: 80%;
+}
+
+.article {
+	top: 50vh;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.article p {
+	width: 95%;
+	line-height: 1.8;
+}
+
+.content h1,
+.content h4,
+.content h5,
+.content p,
+.content span {
+	color: #fff;
+}
+
+.content h1,
+.content h4{
+	line-height: 1.5;
+}
+
+.content h4 {
+	margin-bottom: 50px;
+}
+
+.section5 h4 {
+	margin-bottom: 10px;
+}
+
+.content a::after {
+	content: '\2192';
+	padding-left: 5px;
+}
+
+.content a {
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 15px 70px;
+	transition: 0.3s;
+}
+
+.content a:hover {
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+/*-----------------------------------------------
+*    page
+-----------------------------------------------*/
+.page {
+	position: fixed;
+	top: 0;
+	left: 2.5%;
+	height: 100%;
+}
+
+.page::before {
+	content: '';
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.page ul {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.page li {
+	color: #fff;
+	font-size: 22px;
+	line-height: 1.3;
+}

@@ -1,0 +1,58 @@
+/*-----------------------------------------------
+*    nav
+-----------------------------------------------*/
+.nav {
+    position: fixed;
+    top: 0;
+    right: 2.5%;
+}
+
+.nav ul {
+    padding-left: 0;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.nav li {
+    list-style-type: none;
+    /*margin-bottom: 7px;*/
+}
+
+.nav a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "jf-jinxuan";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color: #8b8b8b !important;
+}
+
+.nav .active a,
+.nav .active a:hover {
+    color: #BDBD3A !important;
+}
+
+.cat-children .menu {
+    position: static;
+}
+
+.cat-children .menu li {
+    display: inline-block;
+    border: solid #fff 1px;
+    padding: 15px 25px;
+    text-align: center;
+    margin-top: 69px;
+}
+
+.cat-children .menu li a {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 0;
+}

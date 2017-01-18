@@ -1,0 +1,21 @@
+.slideshow-module-list-item {
+	position: relative;
+	margin: 10px 0;
+}
+.slideshow-module-list-item .images {
+	text-align: center;
+}
+.slideshow-module-list-item .images img {
+	max-width: 100%;
+}
+.slideshow-module-list-item .content {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.slideshow-module-list-item .content .title a {
+	color: #fff;
+	padding: 5px;
+	display: inline-block;
+}
