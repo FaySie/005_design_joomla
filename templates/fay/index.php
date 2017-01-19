@@ -37,10 +37,10 @@ $doc->addStyleSheet('//fonts.googleapis.com/earlyaccess/notosanstc.css');
                     </div>
                     <div class="col-md-4">
                         <div class="contact">
-                            <a href="http://www.facebook.com/gagafarming/" target="_blank">
+                            <a href="http://www.facebook.com/daanriver/" target="_blank">
                                 <img class="img-responsive" src="<?php echo $this->baseurl . '/templates/' . $this->template ?>/img/facebook.svg" alt="facebook">
                             </a>
-                            <a href="">
+                            <a href="mailto:keven750810@yahoo.com.tw">
                                 <img class="img-responsive" src="<?php echo $this->baseurl . '/templates/' . $this->template ?>/img/contact.svg" alt="contact">
                             </a>
                             <h6>© 2016 GAGA FARMING.</h6>
