@@ -23,6 +23,8 @@ $doc->addStyleSheet('//fonts.googleapis.com/earlyaccess/notosanstc.css');
 *****************************************************-->
         <div class="container" id="main">
 
+            <jdoc:include type="modules" name="content" />
+
             <jdoc:include type="component" />
 
 <!--*****************************************************

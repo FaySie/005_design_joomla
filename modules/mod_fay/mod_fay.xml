@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module"
+	version="3.2"
+	client="site"
+	method="upgrade">
+	<name>mod_fay</name>
+	<author>Asika</author>
+	<creationDate>2014-02-06</creationDate>
+	<copyright>Copyright (C) 2014 Asikart.com</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>asika@asikart.com</authorEmail>
+	<authorUrl>http://asikart.com</authorUrl>
+	<version>1.0</version>
+	<description>MOD_FAY_INSTALL_DESC</description>
+
+	<scriptfile>install.php</scriptfile>
+
+	<!-- module slideshow now has no sql file
+	<install>
+    	<sql>
+        	<file driver="mysql" charset="utf8">sql/install.sql</file>
+  		</sql>
+    </install>
+
+
+	<uninstall>
+    	<sql>
+        	<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+  		</sql>
+    </uninstall>
+	-->
+
+	<files>
+		<filename module="mod_fay">mod_fay.php</filename>
+		<folder>css</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_fay.xml</filename>
+	</files>
+
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_FOOTER"/>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field
+					name="logo"
+					type="media"
+					description="Logo"
+					label="第一頁_Logo"
+					required="true"
+					/>
+
+				<field
+					type="spacer"
+					hr="true"
+					/>
+
+				<field
+					name="section2_title"
+					type="text"
+					description="section2_title"
+					label="第二頁_標題"
+					required="true"
+					/>
+
+				<field
+					name="section2_desc"
+					type="text"
+					description="section2_desc"
+					label="第二頁_副標題"
+					required="true"
+					/>
+
+				<field
+					name="section2_link_desc"
+					type="text"
+					description="section2_link_desc"
+					label="第二頁_連結說明文字"
+					required="true"
+					/>
+
+				<field
+					name="section2_link"
+					type="text"
+					description="section2_link"
+					label="第二頁_連結"
+					required="true"
+					/>
+
+				<field
+					type="spacer"
+					hr="true"
+					/>
+
+				<field
+					name="section3_title"
+					type="text"
+					description="section3_title"
+					label="第三頁_標題"
+					required="true"
+					/>
+
+				<field
+					name="section3_desc"
+					type="text"
+					description="section3_desc"
+					label="第三頁_副標題"
+					required="true"
+					/>
+
+				<field
+					name="section3_link_desc"
+					type="text"
+					description="section3_link_desc"
+					label="第三頁_連結說明文字"
+					required="true"
+					/>
+
+				<field
+					name="section3_link"
+					type="text"
+					description="section3_link"
+					label="第三頁_連結"
+					required="true"
+					/>
+
+				<field
+					type="spacer"
+					hr="true"
+					/>
+
+				<field
+					name="section4_title"
+					type="text"
+					description="section4_title"
+					label="第四頁_標題"
+					required="true"
+					/>
+
+				<field
+					name="section4_desc"
+					type="text"
+					description="section4_desc"
+					label="第四頁_副標題"
+					required="true"
+					/>
+
+				<field
+					name="section4_link_desc"
+					type="text"
+					description="section4_link_desc"
+					label="第四頁_連結說明文字"
+					required="true"
+					/>
+
+				<field
+					name="section4_link"
+					type="text"
+					description="section4_link"
+					label="第四頁_連結"
+					required="true"
+					/>
+
+				<field
+					type="spacer"
+					hr="true"
+					/>
+
+				<field
+					name="section5_title"
+					type="text"
+					description="section5_title"
+					label="中文協會名稱"
+					required="true"
+					/>
+
+				<field
+					name="section5_desc"
+					type="text"
+					description="section5_desc"
+					label="英文協會名稱"
+					required="true"
+					/>
+
+				<field
+					name="section5_info"
+					type="text"
+					description="section5_info"
+					label="協會簡述"
+					required="true"
+					/>
+
+				<field
+					name="section5_text"
+					type="textarea"
+					description="section5_text"
+					label="協會詳細說明"
+					required="true"
+					rows="10"
+					/>
+
+				<field
+					name="section5_map"
+					type="media"
+					description="section5_map"
+					label="協會地圖"
+					required="true"
+					/>
+
+				<field
+					name="order_dir"
+					type="list"
+					label="JFIELD_ORDERING_LABEL"
+					description="JFIELD_ORDERING_DESC"
+					default="DESC"
+					>
+					<option value="ASC">MOD_SLIDESHOW_ORDER_DIR_ASC</option>
+					<option value="DESC">MOD_SLIDESHOW_ORDER_DIR_DESC</option>
+				</field>
+
+			</fieldset>
+
+			<fieldset name="advanced">
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+					/>
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					/>
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					>
+					<option
+						value="1">JGLOBAL_USE_GLOBAL
+					</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+					</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+					/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+					>
+					<option value="static"></option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+
+
+	<updateservers>
+		<!--<server type="collection">http://example.com/list.xml</server>-->
+		<server type="extension"
+			priority="1"
+			name="Asikart Slideshow Module">http://update.asikart.com/module/mod_slideshow.xml
+		</server>
+	</updateservers>
+
+
+</extension>
