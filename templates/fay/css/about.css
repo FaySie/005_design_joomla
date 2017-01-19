@@ -141,6 +141,19 @@ article {
     padding: 0 10px;
 }
 
+.pagination ul li span {
+    color: #BDBD3A;
+}
+
+.pagination ul li a {
+    color: #fff;
+}
+
+.pagination ul li a:hover {
+    color: #8b8b8b;
+    text-decoration: none;
+}
+
 /*-----------------------------------------------
 *    footer
 -----------------------------------------------*/
