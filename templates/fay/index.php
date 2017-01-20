@@ -30,26 +30,8 @@ $doc->addStyleSheet('//fonts.googleapis.com/earlyaccess/notosanstc.css');
 <!--*****************************************************
     footer
 *****************************************************-->
-            <footer>
-                <div class="container" id="footer">
-                    <div class="col-md-4">
-                        <div class="logo">
-                            <img class="img-responsive" src="<?php echo $this->baseurl . '/templates/' . $this->template ?>/img/logo_footer.svg" alt="logo" />
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="contact">
-                            <a href="http://www.facebook.com/daanriver/" target="_blank">
-                                <img class="img-responsive" src="<?php echo $this->baseurl . '/templates/' . $this->template ?>/img/facebook.svg" alt="facebook">
-                            </a>
-                            <a href="mailto:keven750810@yahoo.com.tw">
-                                <img class="img-responsive" src="<?php echo $this->baseurl . '/templates/' . $this->template ?>/img/contact.svg" alt="contact">
-                            </a>
-                            <h6>© 2016 GAGA FARMING.</h6>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <jdoc:include type="modules" name="footer" />
+
         </div>
     </main>
 <!--*****************************************************

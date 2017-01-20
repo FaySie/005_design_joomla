@@ -20,6 +20,7 @@
 	<positions>
 		<position>mainmenu</position>
 		<position>content</position>
+		<position>footer</position>
 		<position>debug</position>
 	</positions>
 	<languages folder="language">
