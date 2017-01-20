@@ -45,14 +45,6 @@
 			<fieldset name="basic">
 
 				<field
-					name="logo"
-					type="media"
-					description="Logo"
-					label="第一頁_Logo"
-					required="true"
-					/>
-
-				<field
 					type="spacer"
 					hr="true"
 					/>
@@ -201,15 +193,7 @@
 					rows="10"
 					/>
 
-				<field
-					name="section5_map"
-					type="media"
-					description="section5_map"
-					label="協會地圖"
-					required="true"
-					/>
-
-				<field
+				<!-- <field
 					name="order_dir"
 					type="list"
 					label="JFIELD_ORDERING_LABEL"
@@ -218,7 +202,7 @@
 					>
 					<option value="ASC">MOD_SLIDESHOW_ORDER_DIR_ASC</option>
 					<option value="DESC">MOD_SLIDESHOW_ORDER_DIR_DESC</option>
-				</field>
+				</field> -->
 
 			</fieldset>
 
