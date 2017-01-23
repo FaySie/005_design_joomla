@@ -12,11 +12,18 @@ defined('_JEXEC') or die;
 $doc = JFactory::getDocument();
 $doc->addStyleSheet('templates/fay/css/index.css');
 
+$doc->addScript( 'templates/fay/js/scroll.js');
+$doc->addScript( 'templates/fay/js/smooth-scroll.js');
+
+
 ?>
 <div class="content">
     <div class="section section1" id="section1">
     	<img class="img-responsive" src="<?php echo $logo; ?>" alt="logo" />
-	    	<a class="scroll" href="#section2">
+	    	<a class="scroll" data-scroll data-options='{ 
+                "easing": "linear",
+                "speed": 1000 
+            }' href="#section2">
 	    		<span class='mouse-container'>
 					<span class='mouse'>
 			    		<span class='scroll-down'></span>
