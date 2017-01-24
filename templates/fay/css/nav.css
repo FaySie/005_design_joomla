@@ -83,4 +83,8 @@
     .nav ul {
         margin-top: 60px;
     }
+
+    .menu {
+        padding-left: 15px;
+    }
 }

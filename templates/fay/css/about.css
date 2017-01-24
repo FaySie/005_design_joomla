@@ -63,6 +63,7 @@ span {
 figure {
     width: 550px;
     height: 320px;
+    max-width: 100%;
 }
 
 article {
@@ -187,4 +188,31 @@ footer {
 
 .contact h6 {
     color: #8b8b8b;
+}
+
+/*-----------------------------------------------
+*    RWD
+-----------------------------------------------*/
+
+@media (max-width: 767px) {
+    article {
+        margin-top: -115px;
+    }
+
+    footer {
+        height: 50%;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .blog {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contact {
+        margin-top: 0;
+    }
 }
