@@ -28,7 +28,7 @@ $link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->
 ?>
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12">
         <article>
             <div>
                 <h4><?php echo $this->item->title; ?></h4>

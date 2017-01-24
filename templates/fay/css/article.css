@@ -136,3 +136,25 @@ footer {
 .contact h6 {
     color: #8b8b8b;
 }
+
+/*-----------------------------------------------
+*    RWD
+-----------------------------------------------*/
+
+@media (max-width: 767px) {
+    #main {
+        padding: 15px;
+    }
+
+    .blog_info img {
+        max-width: 100%;
+    }
+
+    footer {
+        height: 50%;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+}
