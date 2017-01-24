@@ -49,9 +49,9 @@
 }
 
 .cat-children .menu li {
-    display: block;
+    display: inline-block;
     border: solid #fff 1px;
-    padding: 15px 25px;
+    padding: 0px 25px;
     text-align: center;
     margin-top: 69px;
 }
