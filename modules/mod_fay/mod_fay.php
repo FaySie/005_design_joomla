@@ -12,7 +12,6 @@ defined('_JEXEC') or die;
 // Include the syndicate functions only once
 JLoader::registerPrefix('ModFay', __DIR__);
 
-$logo = $params->get('logo');
 
 $section2_title = $params->get('section2_title');
 $section2_desc = $params->get('section2_desc');
@@ -34,7 +33,5 @@ $section5_desc = $params->get('section5_desc');
 $section5_info = $params->get('section5_info');
 $section5_text = $params->get('section5_text');
 $section5_map = $params->get('section5_map');
-
-$classSfx = $params->get('moduleclass_sfx');
 
 require JModuleHelper::getLayoutPath('mod_fay', $params->get('layout', 'default'));
