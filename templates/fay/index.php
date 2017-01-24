@@ -7,9 +7,9 @@ $doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/
 $doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/css/slidshow.css');
 
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/slidshow.js');
+$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.js');
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/smooth-scroll.js');
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/mouseWheel.js');
-// $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/scroll.js');
 
 
 $doc->addStyleSheet('//fonts.googleapis.com/css?family=Noto+Sans');
@@ -21,6 +21,7 @@ $doc->addStyleSheet('//fonts.googleapis.com/earlyaccess/notosanstc.css');
 
 <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
     <jdoc:include type="head" />
 </head>
 
@@ -48,8 +49,19 @@ $doc->addStyleSheet('//fonts.googleapis.com/earlyaccess/notosanstc.css');
 <!--*****************************************************
     nav
 *****************************************************-->
-    <div class="nav">
-        <jdoc:include type="modules" name="mainmenu" />
+    <div class="nav navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle menu_bg" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <jdoc:include type="modules" name="mainmenu" />
+            </div>
+        </div>
     </div>
 
 <!--     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
