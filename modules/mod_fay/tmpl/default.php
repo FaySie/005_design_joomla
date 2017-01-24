@@ -19,7 +19,7 @@ $doc->addScript( 'templates/fay/js/smooth-scroll.js');
 ?>
 <div class="content">
     <div class="section section1" id="section1">
-    	<img class="img-responsive" src="<?php echo $logo; ?>" alt="logo" />
+    	<img class="img-responsive" src="templates/fay/img/home_daanriver.png" alt="logo" />
 	    	<a class="scroll" data-scroll data-options='{ 
                 "easing": "linear",
                 "speed": 1000 
@@ -54,7 +54,7 @@ $doc->addScript( 'templates/fay/js/smooth-scroll.js');
     </div>
     <div class="section section5" id="section5">
         <div>
-            <section class="col-md-6 article">
+            <section class="col-md-6 col-sm-12 article">
                 <h5><?php echo $section5_info ?></h5>
                 <h4><?php echo $section5_desc ?></h4>
                 <h4><?php echo $section5_title ?></h4>
@@ -62,8 +62,8 @@ $doc->addScript( 'templates/fay/js/smooth-scroll.js');
                 	<?php echo nl2br($section5_text); ?>
                 </p>
             </section>
-            <section class="col-md-6 map">
-                <img class="img-responsive" src="<?php echo $section5_map ?>" alt="map" />
+            <section class="col-md-6 col-sm-12 map">
+                <img class="map" src="templates/fay/img/map2.svg" alt="map" />
             </section>    
         </div>
     </div>

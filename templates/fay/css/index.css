@@ -144,6 +144,10 @@ span {
 	height: 100%;
 }
 
+.map {
+	max-width: 100%;
+}
+
 .section {
 	height: 100%;
 	text-align: center;
