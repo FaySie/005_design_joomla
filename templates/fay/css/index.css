@@ -145,7 +145,7 @@ span {
 	max-width: 100%;
 }
 
-section {
+.pade_logo {
 	height: 100%;
 }
 
@@ -269,5 +269,14 @@ section {
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%,-50%);
+	}
+
+	.map {
+		display: none;
+	}
+
+	.article {
+		position: absolute;
+		top: 50%;
 	}
 }

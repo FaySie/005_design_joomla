@@ -19,7 +19,7 @@ $doc->addScript( 'templates/fay/js/smooth-scroll.js');
 ?>
 <div class="content">
     <div class="section section1" id="section1">
-    	<section>
+    	<section class="page_logo">
 			<img class="img-responsive home_logo" src="templates/fay/img/home_daanriver.png" alt="logo" />
 	    	<a class="scroll" data-scroll data-options='{ 
                 "easing": "linear",
