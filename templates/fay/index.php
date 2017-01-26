@@ -6,6 +6,7 @@ $doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/
 $doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/css/nav.css');
 $doc->addStyleSheetVersion($this->baseurl . '/templates/' . $this->template . '/css/slidshow.css');
 
+$doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/style.js');
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/slidshow.js');
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/bootstrap.js');
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/smooth-scroll.js');

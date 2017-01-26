@@ -167,7 +167,7 @@ footer {
 }
 
 #footer {
-    height: 20vh;
+    /*height: 20vh;*/
 }
 
 .contact {
@@ -190,6 +190,10 @@ footer {
     color: #8b8b8b;
 }
 
+.leading-0 {
+    display: inline-block;
+    width: 100%;
+}
 /*-----------------------------------------------
 *    RWD
 -----------------------------------------------*/
