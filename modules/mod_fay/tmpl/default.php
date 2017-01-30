@@ -17,9 +17,13 @@ $doc->addScript( 'templates/fay/js/smooth-scroll.js');
 
 
 ?>
+<!-- <div id="loading">
+	<img src="templates/fay/img/loading.svg" alt="now_loading">
+</div> -->
 <div class="content">
     <div class="section section1" id="section1">
-    	<img class="img-responsive" src="templates/fay/img/home_daanriver.png" alt="logo" />
+    	<section class="page_logo">
+			<img class="img-responsive home_logo" src="templates/fay/img/home_daanriver.png" alt="logo" />
 	    	<a class="scroll" data-scroll data-options='{ 
                 "easing": "linear",
                 "speed": 1000 
@@ -30,6 +34,7 @@ $doc->addScript( 'templates/fay/js/smooth-scroll.js');
 	  				</span>
 				</span>
 	    	</a>
+    	</section>
     </div>
     <div class="section section2" id="section2">
         <div>

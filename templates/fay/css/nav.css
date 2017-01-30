@@ -1,4 +1,29 @@
 /*-----------------------------------------------
+*    loading animate
+-----------------------------------------------*/
+
+#loading {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #0a0e22;
+}
+
+#loading img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.loading_scroll {
+    overflow-y: hidden;
+}
+
+/*-----------------------------------------------
 *    nav
 -----------------------------------------------*/
 .nav {
@@ -10,11 +35,12 @@
 .nav ul {
     padding-right: 35px;
     text-align: right;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .nav li {
     list-style-type: none;
+    float: none;
     /*margin-bottom: 7px;*/
 }
 
@@ -27,7 +53,6 @@
     font-size: 30px;
     font-weight: 500;
     font-family: "jf-jinxuan";
-    text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 7px;
     transition: 0.3s;
@@ -48,9 +73,9 @@
 }
 
 .cat-children .menu li {
-    display: block;
+    display: inline-block;
     border: solid #fff 1px;
-    padding: 15px 25px;
+    /*padding: 0px 25px;*/
     text-align: center;
     margin-top: 69px;
 }
@@ -62,7 +87,20 @@
 }
 
 .navHeaderCollapse {
-    transition: ease-in-out 2s;
+    transition: all ease-in-out 2s;
+}
+
+/*-----------------------------------------------
+*    RWD
+-----------------------------------------------*/
+@media (min-width: 768px) {
+    .cat-children .menu li {
+        padding: 0px 25px;
+    }
+
+    .btn_cat {
+        display: none !important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -78,4 +116,47 @@
         right: 0;
         z-index: -1;
     }
+
+    .nav ul {
+        margin-top: 60px;
+    }
+
+    .cat-children .menu li {
+        display: block;
+        margin-top: 0;
+    }
+
+    .menu {
+        display: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 0;
+    }
+
+    .btn_cat {
+        margin-top: 69px;
+        margin-bottom: 0;
+        display: block;
+        border: solid #fff 1px;
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+        text-align: center;
+    }
+    
+    .btn_cat span {
+        color: #fff;
+        font-size: 12px;
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+        letter-spacing: 2px;
+    }
+
+    .btn_cat span::after {
+        content: '\25be';
+        
+    }
+
+    
 }

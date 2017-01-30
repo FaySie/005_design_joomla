@@ -22,12 +22,12 @@ $images = json_decode($this->item->images);
 $link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid, $this->item->language));
 ?>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12" style="margin-top: 35px;">
         <figure>
             <img class="img-responsive" src="<?php echo htmlspecialchars($images->image_intro, ENT_COMPAT, 'UTF-8'); ?>" alt="coverPhoto">
         </figure>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12" style="margin-top: 35px;">
         <article>
             <div>
                 <h4><?php echo $this->item->title; ?></h4>
