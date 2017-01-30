@@ -32,6 +32,12 @@ $doc->addStyleSheet('//fonts.googleapis.com/earlyaccess/notosanstc.css');
     <jdoc:include type="modules" name="slideshow" />
 
 <!--*****************************************************
+    loading animate
+*****************************************************-->
+        <div id="loading">
+            <img src="templates/fay/img/loading.svg" alt="now_loading">
+        </div>
+<!--*****************************************************
     main
 *****************************************************-->
         <div class="container" id="main">

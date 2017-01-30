@@ -17,6 +17,9 @@ $doc->addScript( 'templates/fay/js/smooth-scroll.js');
 
 
 ?>
+<!-- <div id="loading">
+	<img src="templates/fay/img/loading.svg" alt="now_loading">
+</div> -->
 <div class="content">
     <div class="section section1" id="section1">
     	<section class="page_logo">
