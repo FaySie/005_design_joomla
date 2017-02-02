@@ -18,9 +18,6 @@ if (($tagId = $params->get('tag_id', '')))
 
 // The menu class is deprecated. Use nav instead
 ?>
-<p class="btn_cat">
-	<span>分類選單</span>
-</p>
 <ul class="nav navbar-nav menu<?php echo $class_sfx; ?>"<?php echo $id; ?>>
 <?php foreach ($list as $i => &$item)
 {

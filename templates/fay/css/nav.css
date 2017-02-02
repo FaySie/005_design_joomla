@@ -127,7 +127,7 @@
     }
 
     .menu {
-        display: none;
+        /*display: none;*/
         padding-left: 15px;
         padding-right: 15px;
         margin-top: 0;
@@ -136,25 +136,18 @@
     .btn_cat {
         margin-top: 69px;
         margin-bottom: 0;
-        display: block;
-        border: solid #fff 1px;
-        padding-top: 12.5px;
-        padding-bottom: 12.5px;
-        text-align: center;
-    }
-    
-    .btn_cat span {
-        color: #fff;
-        font-size: 12px;
-        margin-bottom: 0;
         padding-top: 10px;
         padding-bottom: 10px;
+        border: solid #fff 1px;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
         line-height: 20px;
         letter-spacing: 2px;
     }
 
-    .btn_cat span::after {
-        content: '\25be';
+    .btn_cat::after {
+        content: ' \25be';
         
     }
 

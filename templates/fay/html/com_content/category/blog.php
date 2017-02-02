@@ -53,7 +53,7 @@ JHtml::_('behavior.caption');
 	<?php
 		$document = JFactory::getDocument();
 		$renderer = $document->loadRenderer('modules');
-		$options = array('style' => 'xhtml');
+		$options = array('style' => 'html5');
 		$position = 'category-menu';
 		echo $renderer->render($position, $options, null);
 	?>
