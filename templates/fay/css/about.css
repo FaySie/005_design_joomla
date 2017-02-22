@@ -194,6 +194,72 @@ footer {
     display: inline-block;
     width: 100%;
 }
+
+/*-----------------------------------------------
+*    Product
+-----------------------------------------------*/
+
+#customformat-wrap {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#customformat-wrap-inner {
+    width: 85%;
+}
+
+#articles-wrap {
+    margin-top: 69px;
+}
+
+.product_name {
+    color: #fff;
+}
+
+.product_info {
+    line-height: 1.5;
+}
+
+.product_more {
+    text-align: center;
+    border: #fff 1px solid;
+    padding: 10px;
+}
+
+.product_more a {
+    color: #fff;
+}
+
+.product_more a:hover {
+    text-decoration: none;
+}
+
+.product_more::after {
+    content: '\2192';
+    padding-left: 5px;
+}
+
+.product_more:hover {
+    opacity: 0.5;
+}
+
+/*-----------------------------------------------
+*    Product article
+-----------------------------------------------*/
+
+.heading a {
+    color: #fff;
+}
+
+.text {
+    margin-top: 5vh;
+    line-height: 2;
+}
+
+.content-inner {
+    margin-top: 69px;
+}
+
 /*-----------------------------------------------
 *    RWD
 -----------------------------------------------*/
@@ -211,12 +277,17 @@ footer {
         margin: 0 auto;
     }
 
-    .blog {
+    .blog,
+    #customformat-wrap {
         padding-left: 15px;
         padding-right: 15px;
     }
 
     .contact {
         margin-top: 0;
+    }
+
+    .content-img img {
+        width: 100%;
     }
 }
