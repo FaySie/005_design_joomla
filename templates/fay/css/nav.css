@@ -4,7 +4,9 @@
 
 #loading {
     z-index: 1;
-    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -93,9 +95,10 @@
 /*-----------------------------------------------
 *    RWD
 -----------------------------------------------*/
+/*螢幕寬度大於768px時*/
 @media (min-width: 768px) {
     .cat-children .menu li {
-        padding: 0px 25px;
+        padding: 10px 25px;
     }
 
     .btn_cat {
@@ -103,6 +106,7 @@
     }
 }
 
+/*螢幕寬度小於767px時*/
 @media (max-width: 767px) {
     .navHeaderCollapse::after {
         content: '';
@@ -124,12 +128,12 @@
     .cat-children .menu li {
         display: block;
         margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .menu {
-        /*display: none;*/
-        padding-left: 15px;
-        padding-right: 15px;
+        
         margin-top: 0;
     }
 
@@ -148,8 +152,6 @@
 
     .btn_cat::after {
         content: ' \25be';
-        
-    }
 
-    
+    }
 }
