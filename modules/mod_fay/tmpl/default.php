@@ -69,7 +69,15 @@ $doc->addScript( 'templates/fay/js/smooth-scroll.js');
             </section>
             <section class="col-md-6 col-sm-12 map">
                 <img class="map" src="templates/fay/img/map2.svg" alt="map" />
-            </section>    
+            </section>   
+            <a class="scroll" data-scroll data-options='{ 
+                "easing": "linear",
+                "speed": 1000 
+            }' href="#section1">
+                <span class="back_top">
+                    <img class="img-responsive" src="templates/fay/img/back_top.png">
+                </span>
+            </a> 
         </div>
     </div>
 </div>
