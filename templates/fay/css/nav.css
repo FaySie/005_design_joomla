@@ -1,4 +1,21 @@
 /*-----------------------------------------------
+*    justfont web font
+-----------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    font-family: "sourcehansans-tc";
+    font-weight: "200";
+}
+
+/*-----------------------------------------------
 *    loading animate
 -----------------------------------------------*/
 
@@ -53,8 +70,6 @@
 .nav a {
     color: #fff;
     font-size: 30px;
-    font-weight: 500;
-    font-family: "jf-jinxuan";
     letter-spacing: 2px;
     margin-bottom: 7px;
     transition: 0.3s;
